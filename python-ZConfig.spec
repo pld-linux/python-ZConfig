@@ -3,7 +3,7 @@
 %bcond_without	doc	# Sphinx documentation
 %bcond_without	tests	# unit tests
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-ZConfig.spec)
 
 %define		module		ZConfig
 Summary:	Structured Configuration Library
@@ -11,7 +11,7 @@ Summary(pl.UTF-8):	Biblioteka ustrukturyzowanych plików konfiguracyjnych
 Name:		python-%{module}
 # keep 3.x here for python2 support
 Version:	3.6.1
-Release:	3
+Release:	4
 License:	ZPL v2.1
 Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/Z/ZConfig/%{module}-%{version}.tar.gz
